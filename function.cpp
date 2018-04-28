@@ -1,5 +1,6 @@
 #include "function.h"
 
+//made by ihsan
 int CountGenre(ListParent ListGenre){
     addressParent P;
     P = first(ListGenre);
@@ -10,6 +11,8 @@ int CountGenre(ListParent ListGenre){
     }
     return c;
 };
+
+//made by alifiando
 int CountBook(ListChild ListBook){
     addressChild P;
     P = first(ListBook);
