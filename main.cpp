@@ -3,6 +3,7 @@
 #include "parentlist.h"
 #include "childlist.h"
 #include "relationlist.h"
+#include "function.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ int main()
     addressRelation aR;
 
     int menu;
-
+    int countgenre;
     createListGenre(ListGenre);
     createListBook(ListBook);
     createListRelation(ListRelasi);
@@ -67,8 +68,8 @@ int main()
         cout<<"  11. List Book"<<endl;
         cout<<"  12. List Genre and Book"<<endl;
         cout<<"  13. List Book and Genre"<<endl;
-        cout<<"  14. Find Book by ID"<<endl;
-        cout<<"  15. Find Genre by ID"<<endl;
+        cout<<"  14. Show Number of Genre"<<endl;
+        cout<<"  15. Show Number of Book"<<endl;
         cout<<"  *-------------------------------------------------*  "<<endl;
         cout<<"   0.  Exit Program"<<endl;
         cout<<"  *-------------------------------------------------*  "<<endl;
@@ -315,26 +316,24 @@ int main()
                     cin.sync();
                     cin.get();
                 break;
-                /*case 14:
-                    int i;
-                    addressChild b;
+                case 14:
                     cout<<endl;
-                    cout<<"Book id:    ";
-                    cin>>i;
-                    b = findElmBook(ListBook,book);
-                    cout<<info(b).Book;
-                    if (b != NULL)
-                    {
-                        cout<<endl<<info(b).Book;
-                    }
-                    else
-                    {
-                        cout<<"not found";
-                    }
+                    cout<<"  ----------  Number of Genre  ----------"<<endl;
+                    countgenre = CountGenre(ListGenre);
+                    cout<<countgenre<<endl;
                     cout<<"  press 'Enter' to continue..";
                     cin.sync();
                     cin.get();
-                break;*/
+                break;
+                case 15:
+                    cout<<endl;
+                    cout<<"  ----------  Number of Book  ----------"<<endl;
+                    int countbook = CountBook(ListBook);
+                    cout<<countbook<<endl;
+                    cout<<"  press 'Enter' to continue..";
+                    cin.sync();
+                    cin.get();
+                break;
 }
 }
 }

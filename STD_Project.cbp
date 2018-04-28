@@ -40,6 +40,10 @@
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="childlist.h" />
+		<Unit filename="function.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="function.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="parentData.cpp">
 			<Option target="Debug" />
